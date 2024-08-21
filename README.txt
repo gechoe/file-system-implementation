@@ -1,4 +1,4 @@
-README for everything ==========================================================
+README for all components in the project ========================================
 
 NAME:
 =====
@@ -39,16 +39,17 @@ Program Files:
    Part 0 - Fake Test Disks:
         fake_disk_1.c
         fake_disk_2.c
-	
+
+*****
 How to Compile:
 ===============
-    For compiling all files (can use make OR make all):
+    For compiling all files (you can use make OR make all):
         make
-    Part 1 - Frontend (can use make frontend OR make shell):
+    Part 1 - Frontend (you can use make frontend OR make shell):
         make frontend -> Compiles everything in frontend
         make shell
 
-    Part 2 - Backend (can use make backend OR compile each part individually):
+    Part 2 - Backend (you can use make backend OR compile each part individually):
     * IMPORTANT NOTE -> Fake disks must be compiled/make'd before filesystem
         make backend -> Compiles everything in backend
             OR (do the below in the order listed)
@@ -64,6 +65,7 @@ How to Compile:
         make fake_disk_1 -> Compiles fake_disk_1.c
         make fake_disk_2 -> Compiles fake_disk_2.c
 
+*****
 How to Run:
 ===========
     Part 1 - Frontend:
@@ -82,7 +84,8 @@ How to Run:
                 ./format <filename> -> ex: ./format DISK
             To run with specified size:
                 ./format <filename> -s <num MB requested>  -> ex: ./format DISK -s 2
-	
+
+*****
 Known Bugs or Limitations:
 ==========================
     The filesystem is not fully implemented. The front and backend are not
@@ -94,6 +97,7 @@ Known Bugs or Limitations:
         - all given path will be absolute path. 
         - all files can be accessed by any user. (everyone is superuser.) 
 
+*****
 Summary of Features and EC Completed:
 =====================================
     For an in depth summary of features and a step by step guide to testing our
@@ -113,6 +117,7 @@ Summary of Features and EC Completed:
         fake_disk_1.c
         fake_disk_2.c
 
+*****
 File Directory:
 ===============
     shell.c:
@@ -158,6 +163,7 @@ File Directory:
         fake_disk_2.img
             Contains the fake_disks .img
 
+*****
 How to Clean:
 =============
     Removes everything:
